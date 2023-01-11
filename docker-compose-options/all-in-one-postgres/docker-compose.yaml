@@ -18,8 +18,9 @@ services:
       POSTGRES_PASSWORD: mypassword
     volumes:
       - ./initdb:/docker-entrypoint-initdb.d
-      - featurehub-ps-db:/var/lib/postgresql/data
+   #   - featurehub-ps-db:/var/lib/postgresql/data
+      - /Users/raghav.garg/Documents/FEature_data/data:/var/lib/postgresql/data
     ports:
       - 5432:5432
-volumes:
-  featurehub-ps-db:
+#volumes:
+#  featurehub-ps-db:
